@@ -1,0 +1,36 @@
+# Dependencies
+node_modules/
+
+# Hardhat
+artifacts/
+cache/
+typechain-types/
+
+# Environment variables
+.env
+.env.local
+
+# Coverage
+coverage/
+coverage.json
+
+# Debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Deployments (uncomment to ignore local deployment files)
+# deployments/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Solidity
+*.flattened.sol
