@@ -1,0 +1,11 @@
+{
+  "network": "sepolia",
+  "chainId": 11155111,
+  "ConfidentialUSDC": "0x031BA5F2c5E45F702C329725E92f0A638Ea93A30",
+  "CUSDCUnwrapper": "0x622FEa9e5994D81cdD149AB9Fa1c1010EEa0Dae2",
+  "CCTPFinalizer": "0xd0b66fB688a9cb1f25e8A7eAB37860Aa18A29dCa",
+  "messageTransmitterV2": "0xE737e5cEBEEBa77EFE34D4aa090756590b1CE275",
+  "tokenMessengerV2": "0x8FE6B999Dc680CcFDD5Bf7EB0974218be2542DAA",
+  "deployer": "0xA879eB55AaD088A8a19E06610129d4CDb4f2c99b",
+  "timestamp": "2026-03-31T07:21:14.575Z"
+}

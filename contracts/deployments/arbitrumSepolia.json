@@ -1,0 +1,10 @@
+{
+  "network": "arbitrumSepolia",
+  "label": "Arbitrum Sepolia",
+  "BridgeSender": "0x2fBa2f7CdB8B2b400178982f2A38f27Ce4141f28",
+  "router": "0x2a9C5afB0d0e4BAb2BCdaE109EC4b0c4Be15a165",
+  "usdc": "0x75faf114eafb1BDbe2F0316DF893fd58CE46AA4d",
+  "sepoliaReceiver": "0xa7B66075D66BAE9b19abee5Ec296564C9eF448E7",
+  "deployer": "0xA879eB55AaD088A8a19E06610129d4CDb4f2c99b",
+  "timestamp": "2026-03-30T14:37:27.839Z"
+}

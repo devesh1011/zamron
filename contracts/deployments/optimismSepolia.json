@@ -1,0 +1,10 @@
+{
+  "network": "optimismSepolia",
+  "label": "OP Sepolia",
+  "BridgeSender": "0x676C9a2c2C1817A6a63b4fFa6DB0F014AE3089e5",
+  "router": "0x114A20A10b43D4115e5aeef7345a1A71d2a60C57",
+  "usdc": "0x5fd84259d66Cd46123540766Be93DFE6D43130D7",
+  "sepoliaReceiver": "0xa7B66075D66BAE9b19abee5Ec296564C9eF448E7",
+  "deployer": "0xA879eB55AaD088A8a19E06610129d4CDb4f2c99b",
+  "timestamp": "2026-03-30T14:37:36.016Z"
+}

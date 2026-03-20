@@ -1,0 +1,10 @@
+{
+  "network": "baseSepolia",
+  "label": "Base Sepolia",
+  "BridgeSender": "0xDAB2ac030747D15C5B13982e3bA10653bC75949D",
+  "router": "0xD3b06cEbF099CE7DA4AcCf578aaebFDBd6e88a93",
+  "usdc": "0x036CbD53842c5426634e7929541eC2318f3dCF7e",
+  "sepoliaReceiver": "0xa7B66075D66BAE9b19abee5Ec296564C9eF448E7",
+  "deployer": "0xA879eB55AaD088A8a19E06610129d4CDb4f2c99b",
+  "timestamp": "2026-03-30T14:37:22.035Z"
+}
