@@ -61,12 +61,7 @@ export function ArchivePanel({
       </h2>
 
       <div className="space-y-5 rounded-2xl border border-outline-variant/20 bg-surface-container-low p-5">
-        <div className="rounded-xl border border-secondary/30 bg-secondary/10 p-3 text-sm text-secondary">
-          Successful bridge, private send, and unwrap operations can be sealed
-          into encrypted receipt bundles and uploaded to Filecoin through
-          Synapse SDK. The Filecoin reference is then anchored on Calibration
-          for later retrieval.
-        </div>
+        
 
         {!archiveAvailable && (
           <p className="text-sm text-tertiary">
@@ -92,7 +87,7 @@ export function ArchivePanel({
                 className="rounded-xl border border-outline-variant/20 bg-surface-container p-4"
               >
                 <div className="flex flex-col gap-3 md:flex-row md:items-center md:justify-between">
-                  <div>
+                  <div className="min-w-0">
                     <p className="text-[10px] uppercase tracking-[0.16em] text-on-surface-variant">
                       {draft.receipt.operation}
                     </p>
@@ -108,7 +103,7 @@ export function ArchivePanel({
                   <button
                     onClick={() => onArchiveDraft(draft)}
                     disabled={!archiveAvailable || isArchiving}
-                    className="rounded-full bg-gradient-to-r from-secondary to-secondary-container px-5 py-3 text-sm font-bold text-on-secondary transition-all hover:brightness-110 disabled:opacity-50"
+                    className="flex-shrink-0 rounded-full bg-gradient-to-r from-secondary to-secondary-container px-5 py-3 text-sm font-bold text-on-secondary transition-all hover:brightness-110 disabled:opacity-50"
                   >
                     {isArchiving ? "Archiving..." : "Archive to Filecoin"}
                   </button>
@@ -155,11 +150,11 @@ export function ArchivePanel({
                 className="rounded-xl border border-outline-variant/20 bg-surface-container p-4"
               >
                 <div className="flex flex-col gap-3 md:flex-row md:items-center md:justify-between">
-                  <div className="space-y-1">
+                  <div className="min-w-0 space-y-1">
                     <p className="text-[10px] uppercase tracking-[0.16em] text-on-surface-variant">
                       {operationTypeToLabel(record.operationType)}
                     </p>
-                    <p className="text-sm text-on-surface">
+                    <p className="break-all text-sm text-on-surface">
                       Piece CID: {record.pieceCid}
                     </p>
                     <p className="text-xs text-on-surface-variant">
@@ -171,7 +166,7 @@ export function ArchivePanel({
                   <button
                     onClick={() => onRetrieveRecord(record)}
                     disabled={retrievingId !== null}
-                    className="inline-flex items-center justify-center whitespace-nowrap rounded-[999px] border border-outline-variant/40 bg-surface-container-high px-6 py-3 text-sm font-bold text-on-surface transition-colors `hover:border-primary/50 hover:text-primary disabled:opacity-50"
+                    className="inline-flex flex-shrink-0 items-center justify-center whitespace-nowrap rounded-[999px] border border-outline-variant/40 bg-surface-container-high px-6 py-3 text-sm font-bold text-on-surface transition-colors hover:border-primary/50 hover:text-primary disabled:opacity-50"
                   >
                     {retrievingId === record.id
                       ? "Retrieving..."

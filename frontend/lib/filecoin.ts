@@ -2,7 +2,7 @@
 
 import { Synapse } from "@filoz/synapse-sdk";
 import { calibration } from "@filoz/synapse-core/chains";
-import { custom, formatUnits, parseAbi } from "viem";
+import { custom, formatUnits, parseAbi, type EIP1193Provider } from "viem";
 import { FILECOIN_CALIBRATION_CHAIN_ID } from "@/constants/addresses";
 import { getSourcePublicClient } from "@/lib/source-chains";
 
@@ -13,11 +13,16 @@ const USDFC_ADDRESS = "0xb3042734b608a1B16e9e86B374A3f3e389B4cDf0" as const;
 const USDFC_ABI = parseAbi(["function balanceOf(address) view returns (uint256)"]);
 
 function getEthereumTransport() {
-  if (typeof window === "undefined" || !window.ethereum) {
+  if (typeof window === "undefined") {
     throw new Error("MetaMask is required for Filecoin archive actions.");
   }
 
-  return custom(window.ethereum);
+  const provider = (window as unknown as { ethereum?: EIP1193Provider }).ethereum;
+  if (!provider) {
+    throw new Error("MetaMask is required for Filecoin archive actions.");
+  }
+
+  return custom(provider);
 }
 
 function createSynapse(address: `0x${string}`) {

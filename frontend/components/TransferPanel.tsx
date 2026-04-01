@@ -54,10 +54,7 @@ export function TransferPanel({
       </h2>
 
       <div className="space-y-4 rounded-2xl border border-outline-variant/20 bg-surface-container-low p-5">
-        <div className="rounded-xl border border-primary/35 bg-primary/10 p-3 text-sm text-primary">
-          Amount is encrypted with the Zama Relayer SDK in your browser before
-          leaving your device. The transfer amount is never visible onchain.
-        </div>
+        
 
         <div className="space-y-1.5">
           <label className="block text-[10px] font-bold uppercase tracking-wider text-on-surface-variant">
