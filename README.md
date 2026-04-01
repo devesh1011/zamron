@@ -2,6 +2,8 @@
 
 Zamron is a multi chain USDC to confidential cUSDC application built around Circle CCTP, Zama fhEVM, and Filecoin. It lets a user bridge testnet USDC from Base Sepolia, Arbitrum Sepolia, and OP Sepolia into Ethereum Sepolia, wrap the bridged funds into confidential cUSDC in one click, transfer that cUSDC privately, unwrap back to plain USDC when needed, and archive encrypted operation receipts to Filecoin Calibration.
 
+[Zamron Website](https://zamron.vercel.app), [Demo video](https://drive.google.com/drive/folders/1bHfYEZ1TKW8xDcdRw1Ckn8Q9_diLodEz)
+
 
 <img width="1600" height="623" alt="image" src="https://github.com/user-attachments/assets/3dd9dfae-06f4-442c-8098-a4548cca5df0" />
 
@@ -97,3 +99,4 @@ Before recording or demoing, it is helpful to verify:
 - the frontend can read multi-chain USDC balances
 - the deployed Sepolia contracts match the current wrapper/unwrapper assumptions
 - Filecoin archive writes succeed and produce both a Piece CID and a Calibration registry transaction
+
