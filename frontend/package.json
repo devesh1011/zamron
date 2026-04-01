@@ -4,17 +4,18 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "NODE_OPTIONS='--max-old-space-size=8096' next build --webpack",
     "start": "next start",
     "lint": "eslint"
   },
   "dependencies": {
-    "next": "16.2.0",
-    "react": "19.2.4",
-    "react-dom": "19.2.0",
     "@filoz/synapse-sdk": "^0.40.2",
     "@tanstack/react-query": "^5.60.0",
     "@zama-fhe/relayer-sdk": "^0.4.2",
+    "next": "16.2.0",
+    "react": "19.2.4",
+    "react-dom": "19.2.0",
+    "sonner": "^2.0.7",
     "viem": "^2.21.0",
     "wagmi": "^2.14.0"
   },
