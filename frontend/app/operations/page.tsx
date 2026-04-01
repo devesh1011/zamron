@@ -51,7 +51,7 @@ export default function OperationsPage() {
         <div className="mx-auto w-full max-w-5xl space-y-8 pb-8">
           <div className="space-y-1">
             <h1 className="font-headline text-4xl font-extrabold tracking-tight text-on-surface">
-              Vault <span className="text-primary">Operations.</span>
+              Zamron <span className="text-primary">Operations.</span>
             </h1>
             <p className="max-w-2xl text-sm leading-relaxed text-on-surface-variant">
               Manage confidential liquidity on Sepolia by wrapping USDC into

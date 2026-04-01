@@ -175,11 +175,10 @@ export default function BridgePage() {
           <div className="mx-auto flex w-full max-w-2xl flex-col space-y-6 pb-8">
             <div className="mt-2 space-y-1">
               <h1 className="font-headline text-4xl font-extrabold tracking-tight text-on-surface">
-                Bridge <span className="text-primary">Sovereignly.</span>
+                Bridge <span className="text-primary">Privately.</span>
               </h1>
               <p className="max-w-lg text-sm leading-relaxed text-on-surface-variant">
-                Unify your liquidity across the Obsidian Sanctum network using
-                encrypted CCTP protocols.
+                Unify your liquidity.
               </p>
             </div>
 
@@ -222,13 +221,13 @@ export default function BridgePage() {
                             </div>
 
                             <div className="flex-1">
-                              <p className="font-headline text-xs font-bold text-on-surface">
+                              <p className="font-headline text-xl font-bold text-on-surface">
                                 {getSourceChainName(chainId)}
                               </p>
                               <p className="text-[10px] text-on-surface-variant">
                                 {fee > 0n
                                   ? `Estimated fee: ~${formatUnits(fee, 6)} USDC`
-                                  : "Circle CCTP fast transfer"}
+                                  : "zamron fast transfer"}
                               </p>
                             </div>
 
@@ -287,9 +286,7 @@ export default function BridgePage() {
                       <p className="font-headline text-xs font-bold text-on-surface-variant">
                         Confidential USD Coin
                       </p>
-                      <p className="text-[10px] text-on-surface-variant/50">
-                        Estimated processing: ~2.5 mins
-                      </p>
+                      
                     </div>
                   </div>
                 </div>
@@ -309,7 +306,7 @@ export default function BridgePage() {
                     <span className="material-symbols-outlined text-lg">
                       bolt
                     </span>
-                    {isBridging ? "BRIDGING..." : "BRIDGE WITH CCTP"}
+                    {isBridging ? "BRIDGING..." : "BRIDGE WITH ZAMRON"}
                   </button>
                 </div>
               </>
@@ -419,10 +416,7 @@ export default function BridgePage() {
             </div>
 
             <div className="mt-6 space-y-3 px-2 opacity-40">
-              <p className="text-[9px] leading-relaxed text-on-surface-variant">
-                FHE proofs protect transaction metadata. Original wallet
-                addresses are decoupled from destination.
-              </p>
+             
               <div className="flex gap-1.5">
                 <div className="h-0.5 flex-1 rounded bg-surface-container-highest" />
                 <div className="h-0.5 flex-1 rounded bg-surface-container-highest" />

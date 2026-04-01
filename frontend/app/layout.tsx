@@ -17,7 +17,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "cUSDC Bridge",
+  title: "Zamron",
   description: "Bridge USDC to confidential cUSDC via Circle CCTP + Zama fhEVM",
 };
 

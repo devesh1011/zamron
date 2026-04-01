@@ -13,6 +13,7 @@ import {
 import { type ReactNode } from "react";
 import { FILECOIN_CALIBRATION_RPC_URL } from "@/constants/addresses";
 import { ReceiptDraftsProvider } from "@/lib/receipt-drafts-context";
+import { Toaster } from "sonner";
 
 const chains = [baseSepolia, arbitrumSepolia, optimismSepolia, sepolia, filecoinCalibration] as const;
 
@@ -50,6 +51,7 @@ export function Providers({ children }: { children: ReactNode }) {
     <WagmiProvider config={config}>
       <QueryClientProvider client={queryClient}>
         <ReceiptDraftsProvider>{children}</ReceiptDraftsProvider>
+        <Toaster position="bottom-right" richColors />
       </QueryClientProvider>
     </WagmiProvider>
   );

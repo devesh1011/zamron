@@ -11,7 +11,7 @@ export default function LandingPage() {
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-surface-container-high border border-outline-variant/15">
               <span className="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
               <span className="text-xs font-label font-medium text-primary tracking-widest uppercase">
-                Protocol Live on Mainnet
+                Live on Ethereum Sepolia
               </span>
             </div>
             <h1 className="font-headline text-6xl md:text-8xl font-extrabold tracking-tighter leading-[0.9] text-on-surface">
@@ -22,9 +22,9 @@ export default function LandingPage() {
               Finance
             </h1>
             <p className="font-body text-lg md:text-xl text-on-surface-variant max-w-xl leading-relaxed">
-              Sovereign bridging to cUSDC powered by Fully Homomorphic
+              Confidential bridging to cUSDC powered by Fully Homomorphic
               Encryption. Secure your assets in the digital vault where privacy
-              isn't an option—it's the bedrock.
+              isn't an option.
             </p>
             <div className="flex flex-wrap gap-4 pt-4 justify-center">
               <Link
